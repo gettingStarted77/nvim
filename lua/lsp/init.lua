@@ -29,7 +29,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.api.nvim_create_autocmd("BufWritePre", {
       pattern = "*.rs",
       callback = function()
-        vim.lsp.buf.formatting_sync(nil, 200)
+        vim.lsp.buf.format()
       end,
       group = diag_float_grp,
     })
