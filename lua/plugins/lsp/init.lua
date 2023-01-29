@@ -1,6 +1,3 @@
--- Genernal setting
-require("plugins.lsp.setting")
-
 -- Mason UI settings
 local mason_opts = {
     ui = {
@@ -38,6 +35,10 @@ return {
         },
         config = function()
 
+            -- Genernal setting
+            require("plugins.lsp.setting")
+
+            -- LSp config via nvimplspconfig
             local lspconfig = require('lspconfig')
             local lsp_defaults = lspconfig.util.default_config
 
