@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     local diag_float_grp = vim.api.nvim_create_augroup("DiagnosticFloat", { clear = true })
     vim.api.nvim_create_autocmd("BufWritePre", {
-      pattern = "*.rs",
+      pattern = "*.lua",
       callback = function()
         vim.lsp.buf.format()
       end,
