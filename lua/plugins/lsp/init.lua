@@ -34,7 +34,6 @@ return {
             "williamboman/mason-lspconfig.nvim",
         },
         config = function()
-
             -- Genernal setting
             require("plugins.lsp.setting")
 
@@ -48,7 +47,7 @@ return {
                 require('cmp_nvim_lsp').default_capabilities()
             )
 
-            require("lspconfig").sumneko_lua.setup({
+            require("lspconfig").lua_ls.setup({
                 settings = {
                     Lua = {
                         runtime = {
