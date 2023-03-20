@@ -52,7 +52,6 @@ return {
         },
         dependencies = "neovim/nvim-lspconfig",
     },
-
     {
         "rcarriga/nvim-dap-ui",
         dependencies = "mfussenegger/nvim-dap"

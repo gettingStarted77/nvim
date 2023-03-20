@@ -22,7 +22,7 @@ return {
     -- 2.Mason-lspconfig
     {
         "williamboman/mason-lspconfig.nvim",
-        opts = { ensure_installed = { "sumneko_lua", "rust_analyzer" } },
+        opts = { ensure_installed = { "lua_ls", "rust_analyzer" } },
         dependencies = "williamboman/mason.nvim",
     },
     -- 3.Lspconfig

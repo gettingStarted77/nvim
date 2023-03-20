@@ -69,6 +69,9 @@ keymap('v', '<A-k>', '<Cmd>m .-2<CR>==', opts)
 -- NvimTree
 keymap('n', '<leader>e', '<Cmd>NvimTreeToggle<CR>', opts)
 
+-- ToggleTerm
+keymap('n', '<leader>t', '<Cmd>ToggleTerm<CR>', opts)
+
 -- Telescope
 keymap('n', '<leader>ff', '<Cmd>Telescope find_files<CR>', opts)
 keymap('n', '<leader>ft', '<Cmd>Telescope live_grep<CR>', opts)
