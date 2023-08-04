@@ -27,7 +27,6 @@ cmp.setup({
         { name = 'buffer',   keyword_length = 1 },
         { name = 'luasnip',  keyword_length = 2 },
         { name = 'nvim_lua', keyword_length = 2 },
-        { name = 'codeium',  keyword_length = 2 },
     },
     window = {
         documentation = cmp.config.window.bordered(),
@@ -42,7 +41,6 @@ cmp.setup({
                 buffer = 'buf',
                 path = 'path',
                 nvim_lua = 'nvim_lua',
-                codeium = 'codeium',
             }
 
             item.menu = menu_icon[entry.source.name]
